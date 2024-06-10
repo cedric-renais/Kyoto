@@ -430,8 +430,8 @@ body {
 /* FOOTER */
 .footer {
   inline-size: 100%;
-  block-size: 100px;
-  background: #333;
+  block-size: 70px;
+  background: linear-gradient(to top, #333, #626262);
   color: #f1f1f1;
   display: flex;
   justify-content: center;
