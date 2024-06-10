@@ -136,6 +136,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #333;
+  font-weight: 700;
   font-size: 3.125rem;
   text-transform: uppercase;
   padding-block-end: 20px;
@@ -267,6 +268,8 @@ body {
 }
 .tarifs h2 {
   text-align: center;
+  color: #333;
+  font-weight: 700;
   font-size: 3.125rem;
   margin: 120px 0 20px;
   padding: 0 30px;
@@ -296,6 +299,7 @@ body {
 }
 .tarifs__card h3 {
   text-align: center;
+  color: #333;
   padding: 25px 30px;
   font-size: 2.1875rem;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -342,6 +346,96 @@ body {
 .tarifs__card a:hover {
   background: #333;
   color: #f1f1f1;
+}
+/* SECTION - #contact */
+.contact {
+  padding-bottom: 100px;
+}
+.contact h2 {
+  text-align: center;
+  font-size: 3.125rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 50px;
+  padding: 70px 0 0 0;
+  text-transform: uppercase;
+}
+.contact h2 strong {
+  font-weight: 700;
+}
+.contact__form {
+  margin: 0 auto;
+  inline-size: 70%;
+}
+.contact__form-group {
+  position: relative;
+  margin-bottom: 45px;
+}
+.contact__form-group label {
+  color: #333;
+  font-size: 1.25rem;
+}
+.contact__form-group input {
+  display: block;
+  inline-size: 100%;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 3px solid #aaa;
+  color: #666;
+  font-size: 1rem;
+}
+.contact__form-group textarea {
+  inline-size: 100%;
+  block-size: 200px;
+  border: 3px solid #aaa;
+  resize: none;
+  border-radius: 3px;
+  padding: 5px;
+  outline: none;
+  font-size: 1rem;
+  color: #333;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #f1f1f1;
+}
+.contact__form-group:nth-child(4) {
+  margin-bottom: 25px;
+}
+.contact__form-group .contact__form-btn {
+  display: block;
+  inline-size: auto;
+  margin: 0 auto;
+  padding: 15px 60px;
+  border: 3px solid rgb(144, 144, 144);
+  border-radius: 9999px;
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    rgb(65, 65, 65) 50%,
+    rgb(134, 134, 134)
+  );
+  background-size: 200%;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.contact__form-group .contact__form-btn:hover {
+  background-position: 100%;
+  border: 3px solid #fff;
+  color: #fff;
+}
+/* FOOTER */
+.footer {
+  inline-size: 100%;
+  block-size: 100px;
+  background: #333;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* MEDIA QUERIES */
 @media (max-width: 1200px) {
@@ -420,6 +514,13 @@ body {
     position: static;
     inline-size: 100%;
     block-size: auto;
+  }
+  /* SECTION - #contact */
+  .contact h2 {
+    padding: 50px 0 0 0;
+  }
+  .contact__form {
+    padding-left: 0;
   }
 }
 @media (max-width: 900px) {

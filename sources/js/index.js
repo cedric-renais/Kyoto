@@ -16,3 +16,12 @@ navbarLinks.forEach((link) => {
     navbarMenu.classList.remove('active');
   });
 });
+//********//
+// FOOTER //
+//********//
+// Sélectionne l'élément du footer qui contient l'année
+const footerYear = document.querySelector('.footer__year');
+// Obtient l'année en cours
+const currentYear = new Date().getFullYear();
+// Il met à jour le texte de l'élément du footer avec l'année en cours.
+footerYear.textContent = currentYear;
