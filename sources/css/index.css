@@ -140,7 +140,6 @@ body {
   text-transform: uppercase;
   padding-block-end: 20px;
 }
-/* Placement */
 .bloc-1,
 .img-grid-1 {
   grid-area: 2 / 2 / 3 / 3;
@@ -240,7 +239,110 @@ body {
   margin-inline: auto;
   margin-block: 35px;
 }
-
+/* SECTION - Parallax */
+.parallax {
+  inline-size: 100%;
+  block-size: 300px;
+  background: url('../../assets/images/parallax-large-flou.webp');
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.parallax p {
+  font-size: 4.0625rem;
+  color: #f1f1f1;
+  text-shadow: 0 0 10px #000;
+}
+.parallax span {
+  display: block;
+  color: #f1f1f1;
+  font-size: 1.5625rem;
+}
+/* SECTION - #Tarifs */
+.tarifs {
+  padding-bottom: 150px;
+}
+.tarifs h2 {
+  text-align: center;
+  font-size: 3.125rem;
+  margin: 120px 0 20px;
+  padding: 0 30px;
+}
+.tarifs hr {
+  inline-size: 200px;
+  margin: 20px auto 100px;
+}
+.tarifs__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  inline-size: 100%;
+}
+.tarifs__card {
+  inline-size: 350px;
+  block-size: auto;
+  border-radius: 5px;
+  margin: 15px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.tarifs__card:hover {
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+}
+.tarifs__card h3 {
+  text-align: center;
+  padding: 25px 30px;
+  font-size: 2.1875rem;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background: #ffafbf;
+}
+.tarifs__card span {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  font-size: 1.5625rem;
+  font-weight: 700;
+}
+.tarifs__card:nth-child(2) h3 {
+  background: #ff5073;
+}
+.tarifs__card:nth-child(3) h3 {
+  background: #ff0033;
+}
+.tarifs__card p {
+  font-size: 1.125rem;
+  padding: 20px 10px;
+  border-top: 1px solid #c2c5c2;
+}
+.tarifs__card p:last-of-type {
+  border-bottom: 1px solid #c2c5c2;
+}
+.tarifs__card p:nth-child(odd) {
+  background: rgba(195, 195, 195, 0.219);
+}
+.tarifs__card a {
+  display: block;
+  text-decoration: none;
+  border: 1px solid #333;
+  text-align: center;
+  inline-size: 200px;
+  block-size: 50px;
+  line-height: 50px;
+  border-radius: 9999px;
+  color: #333;
+  font-size: 1.125rem;
+  margin: 20px auto;
+  transition: all 0.2s ease-in-out;
+}
+.tarifs__card a:hover {
+  background: #333;
+  color: #f1f1f1;
+}
 /* MEDIA QUERIES */
 @media (max-width: 1200px) {
   /* SECTION - #todo */
@@ -320,8 +422,7 @@ body {
     block-size: auto;
   }
 }
-
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   /* HEADER */
   .home {
     block-size: 650px;
@@ -343,6 +444,13 @@ body {
     line-height: 50px;
     font-size: 1.125rem;
     margin-block-start: 15px;
+  }
+  /* SECTION - #tarifs */
+  .tarifs h2 {
+    font-size: 2.1875rem;
+  }
+  .tarifs hr {
+    margin: 20px auto 20px;
   }
 }
 @media (max-width: 700px) {
@@ -373,7 +481,6 @@ body {
   .todo h2 {
     font-size: 1.875rem;
   }
-
   .todo__bloc,
   .todo__img-grid {
     grid-area: auto;
@@ -382,13 +489,12 @@ body {
     inline-size: 100%;
     block-size: 600px;
   }
-
   .todo__bloc-left-txt h3,
   .todo__bloc-right-txt h3 {
     font-size: 1.5625rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   /* NAV */
   .navbar__icon {
     top: 15px;
@@ -413,5 +519,14 @@ body {
     block-size: 45px;
     line-height: 45px;
     font-size: 1rem;
+  }
+  /* SECTION - Parallax */
+  .parallax p {
+    font-size: 3.4375rem;
+  }
+  /* SECTION - #tarifs */
+  .tarifs h2 {
+    font-size: 1.875rem;
+    margin: 50px 0 50px;
   }
 }
