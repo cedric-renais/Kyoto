@@ -1,13 +1,8 @@
 # Projet Kyoto
 
-<center>
 Ce projet est une agence de tourisme virtuelle pour la ville de Kyoto. Il est développé en utilisant les langages HTML, CSS et JavaScript.
 
-<br>
-
-<img src="./sources/assets/images/accueil-pic-lum-down.webp" width="600" height="400">
-
-</center>
+![Accueil Pic](./sources/assets/images/accueil-pic-lum-down.webp)
 
 ## Fonctionnalités
 
